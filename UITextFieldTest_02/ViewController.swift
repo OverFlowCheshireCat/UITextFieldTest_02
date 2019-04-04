@@ -14,6 +14,8 @@ class ViewController: UIViewController {
         lblTarget.text = txtF.text;
         txtF.text = "";
         
+        txtF.backgroundColor = UIColor.blue;
+        view.backgroundColor = UIColor.black;
         txtF.resignFirstResponder();
     }
 }
