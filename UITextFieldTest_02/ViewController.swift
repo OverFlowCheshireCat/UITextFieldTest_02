@@ -1,20 +1,19 @@
-//
-//  ViewController.swift
-//  UITextFieldTest_02
-//
-//  Created by dit03 on 2019. 4. 4..
-//  Copyright © 2019년 201730529. All rights reserved.
-//
+// Codes By. Yotta
 
-import UIKit
+import UIKit;
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var txtF: UITextField!;
+    @IBOutlet weak var lblTarget: UILabel!;
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        super.viewDidLoad();
     }
 
-
+    @IBAction func changeBtn(_ sender: Any) {
+        lblTarget.text = txtF.text;
+        txtF.text = "";
+        
+        txtF.resignFirstResponder();
+    }
 }
-
